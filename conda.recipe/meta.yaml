@@ -1,0 +1,20 @@
+{% set version="13.41.0.28bdc39" %}
+
+package:
+  name: t_coffee
+  version: {{ version }}
+
+source:
+  url: http://www.tcoffee.org/Packages/Stable/Latest/T-COFFEE_distribution_Version_{{ version }}.tar.gz
+  sha256: 081be54f86723fb09e5db05443ba97d08bc4f53d07d4673c8f7bc142c2587041
+
+requirements:
+  build:
+    - zlib
+    - make
+    - {{ compiler('cxx') }}
+
+test:
+  commands:
+    - t_coffee -version | grep -q {{ version }}
+
