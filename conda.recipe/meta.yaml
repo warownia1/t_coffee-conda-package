@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://s3.eu-central-1.amazonaws.com/tcoffee-packages/Archives/T-COFFEE_distribution_Version_{{ version }}.tar.gz
-  sha256: 081be54f86723fb09e5db05443ba97d08bc4f53d07d4673c8f7bc142c2587041
+  sha256: 54d2b00956af79a884fe7174522522c77e65796d5aa08974dad86e061e6d12d1
 
 requirements:
   build:
